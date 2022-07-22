@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050827817662",
+    "project_id": "movieverse-45835",
+    "storage_bucket": "movieverse-45835.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050827817662:android:b56b25ceb955ec8b9d94ef",
+        "android_client_info": {
+          "package_name": "com.example.movieverse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050827817662-p9rpe5n6tdtji28te5pnnu4tldvklt17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1pEYTuq_ACZ0S2Fq4Fwf4jEYcyBIhdQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050827817662-p9rpe5n6tdtji28te5pnnu4tldvklt17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

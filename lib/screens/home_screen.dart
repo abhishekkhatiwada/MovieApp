@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:movieverse/api.dart';
+import 'package:movieverse/providers/authprovider.dart';
+import 'package:movieverse/providers/login_provider.dart';
 import 'package:movieverse/providers/movie_provider.dart';
 import 'package:movieverse/widgets/popular_widget.dart';
 import 'package:movieverse/widgets/tab_bar_widget.dart';
@@ -20,6 +22,14 @@ class HomeScreen extends StatelessWidget {
               title: Text('MOVIE VERSE'),
               elevation: 0,
               backgroundColor: Colors.black,
+              actions: [
+                IconButton(
+                    onPressed: () {
+                      ref.read(loadingProvider.notifier).toggle();
+                      ref.read(authProvider).userSignOut();
+                    },
+                    icon: Icon(Icons.exit_to_app_sharp))
+              ],
               bottom: TabBar(
                   onTap: (index) {
                     switch (index) {
